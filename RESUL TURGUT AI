@@ -1,0 +1,41 @@
+✅ Project 5 — Mini Shopping Cart
+🧾 Summary
+
+In this project, I built a text-based shopping cart program using Python. The program allows users to select items from a menu, keeps track of the total cost, and prints a receipt at the end.
+
+🛒 How the cart handles duplicate items
+
+If the same item is selected multiple times, the program does not create a new entry. Instead, it increases the quantity of that item in the cart.
+
+Example:
+
+First selection → Apple x1
+Second selection → Apple x2
+
+This is done using a dictionary:
+
+if name in cart:
+    cart[name] += 1
+else:
+    cart[name] = 1
+❌ What happens with invalid input
+
+If the user enters a number that is not in the menu (for example 6 or 0), the program:
+
+Shows an error message: "Invalid choice. Try again."
+Continues running without crashing
+💡 Key Concepts Used
+Dictionaries (menu and cart)
+While loop (for continuous shopping)
+Conditions (if / elif / else)
+f-strings for formatting output
+⭐ Bonus Features (if you did them)
+User can enter quantity (How many?)
+10% discount applied if total > $5.00
+🧠 What I learned
+How to store and update data in dictionaries
+How to build interactive programs using loops
+How to manage user input safely
+🚀 Notes
+
+The program runs until the user selects "Done" and then prints a formatted receipt with total cost.
